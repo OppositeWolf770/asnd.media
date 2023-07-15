@@ -1,0 +1,507 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Source+Serif+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000404;
+  background-image: url(/assets/Banner1.png);
+  background-repeat: no-repeat;
+}
+
+.topnav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.topnav .ASNDlogo {
+  position: relative;
+  width: 350px;
+  margin-left: calc(1rem + 2.5vw);
+}
+.topnav--links {
+  font-family: "Source Serif Pro", serif;
+  letter-spacing: 1.5px;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topnav--links a {
+  position: relative;
+  margin: 30px;
+  color: white;
+  text-decoration: none;
+}
+.topnav--links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  font-weight: bold;
+}
+
+.active {
+  color: black;
+}
+
+.content {
+  background-color: rgb(34, 0, 1);
+  border-radius: 25px;
+  color: white;
+  font-family: "Oswald", sans-serif;
+}
+
+.home--content {
+  margin-top: 200px;
+  margin-left: 30%;
+  margin-right: 6%;
+  padding-left: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.home--contentHeader {
+  font-size: calc(1rem + 3.6vw);
+  margin-bottom: 30px;
+}
+.home--contentSubHeader {
+  font-size: calc(1rem + 0.72vw);
+  margin-bottom: 50px;
+}
+.home--content button {
+  background-color: white;
+  color: rgb(146, 7, 11);
+  cursor: pointer;
+  border: none;
+  padding: 1.2rem;
+  font-family: "Poppins", sans-serif;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+}
+.home--content button:hover {
+  background-color: rgb(146, 7, 11);
+  color: white;
+}
+.home--span {
+  color: rgb(146, 7, 11);
+}
+
+.header {
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  font-size: calc(1rem + 3vw);
+  padding: 0.9rem;
+  text-align: center;
+  width: 20%;
+}
+
+.boost-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5rem;
+}
+.boost--header {
+  font-size: calc(1rem + 2.5vw);
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+.boost--content {
+  width: 30%;
+}
+.boost--content-subheader {
+  text-align: center;
+  font-size: calc(1rem + 1vw);
+  font-weight: 300;
+  padding-top: 1rem;
+}
+.boost--content-subheader a {
+  text-decoration: none;
+}
+.boost--content ul {
+  font-size: calc(1rem + 0.25vw);
+  font-weight: 300;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.boost--content ul li {
+  margin-bottom: 0.5rem;
+}
+
+.contact--wrapper {
+  margin-top: 2%;
+  display: flex;
+  margin-left: calc(1rem + 2.5vw);
+  margin-bottom: 5%;
+}
+.contact--content {
+  color: white;
+  margin-left: 2%;
+  background-color: #220001;
+  border-radius: 25px;
+  padding: 2%;
+}
+.contact--content-heading {
+  font-size: calc(0.5rem + 2.25vw);
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  margin-bottom: 5%;
+}
+.contact--content-text {
+  font-size: calc(0.5rem + 1.25vw);
+  margin-bottom: 20px;
+}
+.contact--form {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  width: 40%;
+  background-color: #220001;
+  padding: 2%;
+  border-radius: 25px;
+}
+.contact--form input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+.contact--form input::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.contact--form .nameboxes {
+  display: flex;
+  gap: 3%;
+  margin-bottom: 4%;
+}
+.contact--form .label {
+  margin-bottom: 1%;
+}
+.contact--form .name {
+  width: 50%;
+}
+.contact--form .nameLabels {
+  display: flex;
+}
+.contact--form textarea {
+  width: 100%;
+  margin-bottom: 2%;
+  resize: none;
+  border-radius: 5px;
+}
+.contact--form textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+}
+.contact--form .emailBox {
+  width: 100%;
+  margin-bottom: 4%;
+  border-radius: 5px;
+}
+.contact--form .emailBox::placeholder {
+  font-family: "Poppins";
+}
+.contact--form button {
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 2% 4%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.contact--form button:hover {
+  background-color: rgb(146, 7, 11);
+  color: white;
+}
+
+.portfolio--content {
+  margin-bottom: 5vw;
+  font-size: calc(1rem + 3vw);
+  padding: 2%;
+  width: 50%;
+  text-align: center;
+  margin-left: 40%;
+}
+
+.slideshow--slide {
+  width: 80%;
+  height: 50vw;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 0 15px;
+  padding-bottom: 5px;
+  border-radius: 25px;
+  font-size: calc(10px + 3vw);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.arrow:hover {
+  background-color: black;
+}
+
+.leftArrow {
+  left: 2.25vw;
+}
+
+.rightArrow {
+  right: 2.25vw;
+}
+
+.about--header {
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 10%;
+  font-size: calc(1rem + 3vw);
+  padding: 0.9rem;
+  text-align: center;
+  width: 20%;
+}
+.about--content {
+  margin: 0 auto;
+  text-align: center;
+  width: 65%;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+}
+.about--content-subheader {
+  padding-top: 50px;
+  margin-bottom: 70px;
+  font-size: calc(1rem + 2vw);
+  font-weight: bold;
+}
+.about--content-text {
+  font-size: calc(1rem + 0.75vw);
+  font-weight: 200;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.about--Profiles {
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 10rem;
+}
+.about--profile {
+  border-radius: 25px;
+  width: calc(5rem + 21vw);
+  height: calc(5rem + 30vw);
+}
+
+.subtext {
+  font-size: calc(1rem + 0.05vw);
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+  margin-bottom: 1rem;
+}
+.subtext a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.contact-link {
+  transition: filter 0.3s ease;
+}
+.contact-link:hover {
+  filter: brightness(70%);
+}
+
+.red {
+  color: #CA080D;
+}
+
+.underline {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
+.footer {
+  background-color: #220001;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: calc(1rem + 0.1vh);
+  display: flex;
+  justify-content: space-around;
+}
+.footer a {
+  text-underline-offset: 5.5px;
+  color: white;
+}
+.footer a:hover {
+  color: #CA080D;
+}
+
+.carousel {
+  display: flex;
+  color: white;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+}
+.carousel-item {
+  position: absolute;
+  top: 99%;
+  left: 0;
+  font-size: 24px;
+  white-space: nowrap;
+  animation: wave 19s linear infinite;
+}
+
+.Projects {
+  font-family: "Oswald";
+  font-size: calc(1rem + 0.3vw);
+  display: flex;
+  overflow: hidden;
+  justify-content: space-around;
+  gap: 100px;
+  margin-bottom: 15vw;
+}
+
+.Project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 200px;
+}
+.Project-Image {
+  width: 275px;
+  height: 200px;
+}
+.Project-Name {
+  color: white;
+  margin-top: 1rem;
+}
+
+.slideshow {
+  margin-bottom: 5vw;
+}
+
+@keyframes wave {
+  0% {
+    transform: translateX(0) translateY(0);
+  }
+  25% {
+    transform: translateX(100%) translateY(0);
+  }
+  50% {
+    transform: translateX(100%) translateY(100%);
+  }
+  75% {
+    transform: translateX(0) translateY(100%);
+  }
+  100% {
+    transform: translateX(0) translateY(0);
+  }
+}
+@media (max-width: 988px) {
+  .topnav--links {
+    flex-direction: column;
+  }
+  .topnav .ASNDlogo {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 820px) {
+  .home--content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    padding: 30px;
+  }
+  .home--contentHeader {
+    text-align: center;
+  }
+  .home--contentSubheader {
+    text-align: center;
+  }
+  .home--content a {
+    margin: 0 auto;
+  }
+  .Projects {
+    flex-direction: column;
+  }
+  .Projects .Project {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .portfolio--content {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .boost-wrapper {
+    flex-direction: column;
+  }
+  .boost--header {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .boost--content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .about--header {
+    width: 50%;
+  }
+  .about--content {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .about--Profiles {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about--Profiles img {
+    width: 90%;
+    height: 125vw;
+    margin-bottom: 15vw;
+  }
+  .contact--wrapper {
+    flex-direction: column;
+    margin-left: 0;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .contact--content {
+    text-align: center;
+    margin-left: 0;
+    margin-bottom: 10%;
+  }
+  .contact--content-heading {
+    font-size: calc(1rem + 6vw);
+  }
+  .contact--form {
+    width: 95%;
+    padding-bottom: 2%;
+    padding-top: 6%;
+    padding-left: 4%;
+    margin-bottom: 10%;
+  }
+  .contact--form input {
+    width: 90%;
+  }
+  .contact--form .nameboxes {
+    gap: 0;
+  }
+  .contact--form .emailBox {
+    width: 95%;
+  }
+  .contact--form textarea {
+    width: 95%;
+  }
+  .contact--form button {
+    margin-bottom: 4%;
+  }
+}
+
+/*# sourceMappingURL=App.css.map */
