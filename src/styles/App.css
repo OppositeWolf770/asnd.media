@@ -10,6 +10,7 @@ body {
 
 .topnav {
   display: flex;
+  margin-top: 2%;
   flex-wrap: wrap;
   justify-content: space-between;
 }
@@ -102,8 +103,6 @@ body {
 }
 .boost--header {
   font-size: calc(1rem + 2.5vw);
-  padding-left: 5rem;
-  padding-right: 5rem;
 }
 .boost--content {
   width: 30%;
@@ -405,7 +404,7 @@ body {
     flex-direction: column;
   }
   .topnav .ASNDlogo {
-    margin: 0 auto;
+    margin-left: 20%;
   }
 }
 @media (max-width: 820px) {

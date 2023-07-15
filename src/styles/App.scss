@@ -15,6 +15,7 @@ body {
 // Topnav Style Rules
 .topnav {
     display: flex;
+    margin-top: 2%;
     flex-wrap: wrap;
     // padding: 150px;
     justify-content: space-between;
@@ -23,10 +24,10 @@ body {
         position: relative;
         // float: left;
         width: 350px;
-        // width: calc(1rem + 17vw);
-        // margin-left: 50px;
+         //width: calc(1rem + 17vw);
+         //margin-left: 50px;
         margin-left: calc(1rem + 2.5vw);
-    }    
+    }
 
     &--links {
         font-family: 'Source Serif Pro', serif;
@@ -148,8 +149,8 @@ body {
 
     &--header {
         font-size: calc(1rem + 2.5vw);
-        padding-left: 5rem;
-        padding-right: 5rem;
+        //padding-left: 5rem;
+        //padding-right: 5rem;
     }
 
     &--content {
@@ -522,10 +523,13 @@ body {
     .topnav {
         &--links {
             flex-direction: column;
+            //margin: 0 auto;
+
         }
 
         .ASNDlogo {
-            margin: 0 auto;
+            //margin: 0 auto;
+            margin-left: 20%;
         }
     }
 }
