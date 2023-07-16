@@ -1,13 +1,22 @@
 import ImageSlider from "../ImageSlider"
 import "../Slideshow.css"
 
-export default function Slideshow() {
-    const slides = [
-        { url: "assets/efird-leather.JPG", title: "Efird Leather" },
-        { url: "assets/Spirited-Recreations.png", title: "Spirited Recreations" },
-        { url: "assets/2-Crafty-Sisters.png", title: "2 Crafty Sisters" },
-        { url: "assets/IMG_3330.png", title: "Money" },
-    ];
+type Slide = {
+    url: string
+}
+
+type SlideshowProps = {
+    slides: Slide[]
+}
+
+
+export default function Slideshow({slides}: SlideshowProps) {
+    // const slides = [
+    //     // { url: "assets/efird-leather.JPG", title: "Efird Leather" },
+    //     // { url: "assets/Spirited-Recreations.png", title: "Spirited Recreations" },
+    //     // { url: "assets/2-Crafty-Sisters.png", title: "2 Crafty Sisters" },
+    //     // { url: "assets/IMG_3330.png", title: "Money" },
+    // ];
 
     const containerStyles = {
         width: '80%',

@@ -8,7 +8,7 @@ body {
 
 .topnav {
   display: flex;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 5%;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -195,7 +195,7 @@ body {
   border-radius: 5px;
 }
 .contact--form .emailBox::placeholder {
-  font-family: "Poppins";
+  font-family: "Poppins", serif;
 }
 .contact--form button {
   background-color: white;
@@ -224,7 +224,7 @@ body {
   width: 40%;
   font-size: calc(1rem + 3vw);
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 1%;
   border-radius: 25px;
 }
 .portfolio--header-left {
@@ -269,20 +269,17 @@ body {
 }
 
 .about--header {
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 10%;
+  margin: 2% auto 10%;
   font-size: calc(1rem + 3vw);
   padding: 0.9rem;
   text-align: center;
   width: 20%;
 }
 .about--content {
-  margin: 0 auto;
   text-align: center;
   width: 65%;
   padding-bottom: 50px;
-  margin-bottom: 50px;
+  margin: 0 auto 50px;
 }
 .about--content-subheader {
   padding-top: 50px;
@@ -297,10 +294,9 @@ body {
   padding-right: 50px;
 }
 .about--Profiles {
-  margin: 0 auto;
   display: flex;
   justify-content: space-around;
-  margin-bottom: 10rem;
+  margin: 0 auto 10rem;
 }
 .about--profile {
   border-radius: 25px;
@@ -433,8 +429,7 @@ body {
 @media (max-width: 820px) {
   .home--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
     padding: 30px;
   }
   .home--contentHeader {
@@ -450,34 +445,29 @@ body {
     flex-direction: column;
   }
   .Projects .Project {
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .portfolio--content {
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .boost-wrapper {
     flex-direction: column;
   }
   .boost--header {
     width: 70%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .boost--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .about--header {
     width: 50%;
   }
   .about--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .about--Profiles {
     flex-direction: column;
@@ -490,7 +480,6 @@ body {
   }
   .contact--wrapper {
     flex-direction: column;
-    margin-left: 0;
     width: 90%;
     margin: 0 auto;
   }

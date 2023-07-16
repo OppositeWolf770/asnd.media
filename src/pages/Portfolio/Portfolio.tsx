@@ -10,8 +10,26 @@ export default function Portfolio() {
             <div className="content portfolio--content">Some Examples of our Work</div>
 
             <div className="portfolio--header portfolio--header-left">Efird Leather</div>
-            <Slideshow />
-            <Slideshow />
+            <Slideshow slides={[
+                { url: "assets/efird-leather.JPG"}
+            ]} />
+
+            <div className="portfolio--header portfolio--header-right">Spirited Recreations</div>
+            <Slideshow slides={[
+                { url: "assets/Spirited-Recreations.jpg"}
+            ]} />
+
+            <div className="portfolio--header portfolio--header-left">2 Crafty Sisters</div>
+            <Slideshow slides={[
+                { url: "assets/2-Crafty-Sisters.jpg"}
+            ]} />
+
+            <div className="portfolio--header portfolio--header-right">Red Barn</div>
+            <Slideshow slides={[
+                { url: "assets/red-barn.jpg"}
+            ]} />
+
+
         </>
     )
 }

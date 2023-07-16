@@ -68,6 +68,13 @@ const ImageSlider = ({ slides }: ImageSliderProps) => {
     }
 
 
+    if (slides.length == 1) {
+        return (
+            <div style={sliderStyles}>
+                <div style={slideStyles}></div>
+            </div>
+        )
+    }
 
     return (
         <div style={sliderStyles}>
