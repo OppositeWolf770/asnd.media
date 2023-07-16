@@ -13,6 +13,7 @@ body {
 // Topnav Style Rules
 .topnav {
     display: flex;
+    //align-items: flex-start;
     margin-top: 5%;
     margin-bottom: 5%;
     flex-wrap: wrap;
@@ -20,18 +21,22 @@ body {
     justify-content: space-between;
 
     .ASNDlogo {
-        position: relative;
+        //position: relative;
+        margin: 0 auto;
         // float: left;
         width: 350px;
          //width: calc(1rem + 17vw);
          //margin-left: 50px;
         margin-left: calc(1rem + 2.5vw);
+        //margin-left: auto;
+        //margin-right: auto;
     }
 
     &--links {
+        display: flex;
+        position: relative;
         font-family: 'Source Serif Pro', serif;
         letter-spacing: 1.5px;
-        display: flex;
         // justify-content: center;
         align-items: center;
         margin-left: auto;
@@ -521,14 +526,33 @@ body {
 @media (max-width: 988px) {
     .topnav {
         &--links {
-            flex-direction: column;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-row: auto;
+            margin-top: 5px;
+            justify-items: center;
+
+            //a {
+            //    background-color: #220001;
+            //    padding: 2px;
+            //    border-radius: 3px;
+            //}
+            //flex-direction: column;
+            //margin-left: 0;
             //margin: 0 auto;
 
         }
 
         .ASNDlogo {
+            display: block;
+            width: 75%;
+             //margin: 0 auto;
             //margin: 0 auto;
-            margin-left: 20%;
+            //margin-left: 20%;
+            //justify-content: center;
+            margin-left: auto;
+            //margin-right: auto;
         }
     }
 }
