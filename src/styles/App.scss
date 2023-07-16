@@ -299,6 +299,25 @@ body {
         text-align: center;
         margin-left: 40%;
     }
+
+    &--header {
+        background-color: #220001;
+        color: white;
+        width: 40%;
+        font-size: calc(1rem + 3vw);
+        text-align: center;
+        margin-bottom: 5%;
+        border-radius: 25px;
+
+        &-left {
+            margin-left: 10%;
+        }
+
+        &-right {
+            margin-right: 10%;
+            margin-left: auto;
+        }
+    }
 }
 
 .slideshow {
@@ -551,7 +570,8 @@ body {
             //margin: 0 auto;
             //margin-left: 20%;
             //justify-content: center;
-            margin-left: auto;
+            //margin-left: auto;
+            margin: 0 auto;
             //margin-right: auto;
         }
     }

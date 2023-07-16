@@ -1,5 +1,5 @@
-import ImageSlider from "./ImageSlider"
-import "./Slideshow.css"
+import ImageSlider from "../ImageSlider"
+import "../Slideshow.css"
 
 export default function Slideshow() {
     const slides = [

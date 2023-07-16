@@ -8,7 +8,7 @@ import About from './pages/About/About'
 import Home from './pages/Home/Home'
 import Packages from './pages/Packages'
 import Contact from './pages/Contact'
-import Portfolio from './pages/Portfolio'
+import Portfolio from './pages/Portfolio/Portfolio'
 import Carousel from './pages/Home/Carousel'
 
 

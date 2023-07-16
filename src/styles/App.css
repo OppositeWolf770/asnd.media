@@ -218,6 +218,22 @@ body {
   text-align: center;
   margin-left: 40%;
 }
+.portfolio--header {
+  background-color: #220001;
+  color: white;
+  width: 40%;
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+  margin-bottom: 5%;
+  border-radius: 25px;
+}
+.portfolio--header-left {
+  margin-left: 10%;
+}
+.portfolio--header-right {
+  margin-right: 10%;
+  margin-left: auto;
+}
 
 .slideshow--slide {
   width: 80%;
@@ -411,7 +427,7 @@ body {
   .topnav .ASNDlogo {
     display: block;
     width: 75%;
-    margin-left: auto;
+    margin: 0 auto;
   }
 }
 @media (max-width: 820px) {
