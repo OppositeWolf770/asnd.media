@@ -5,9 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #000404;
-    background-image: url(/assets/Banner1.png);
-    background-repeat: no-repeat;
+    background: #000404 url(assets/Banner1.png) no-repeat;
 }
 
 
@@ -15,7 +13,7 @@ body {
 // Topnav Style Rules
 .topnav {
     display: flex;
-    margin-top: 2%;
+    margin-top: 5%;
     margin-bottom: 5%;
     flex-wrap: wrap;
     // padding: 150px;
