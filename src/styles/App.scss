@@ -473,12 +473,12 @@ body {
 
 // Projects Carousel Style Rules
 .Projects {
-    font-family: 'Oswald';
+    font-family: 'Oswald', serif;
     font-size: calc(1rem + 0.3vw);
     display: flex;
-    overflow: hidden;
+    flex-wrap: wrap;
     justify-content: space-around;
-    gap: 100px;
+    gap: 5%;
     margin-bottom: 15vw;
 
 }
