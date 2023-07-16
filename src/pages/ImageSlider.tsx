@@ -25,35 +25,35 @@ const ImageSlider = ({ slides }: ImageSliderProps) => {
         backgroundImage: `url(${slides[currentIndex].url})`,
     }
 
-    const leftArrowStyles: CSSProperties = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        padding: '0 15px',
-        paddingBottom: '5px',
-        borderRadius: '25px',
-        left: '32px',
-        fontSize: 'calc(10px + 3vw)',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        color: '#fff',
-        zIndex: 1,
-        cursor: 'pointer',
-    }
-
-    const rightArrowStyles: CSSProperties = {
-        position: 'absolute',
-        top: '50%',
-        transform: 'translate(0, -50%)',
-        padding: '0 15px',
-        paddingBottom: '5px',
-        borderRadius: '25px',
-        right: '32px',
-        fontSize: 'calc(10px + 3vw)',
-        backgroundColor: 'rgba(0, 0, 0, 0.5)',
-        color: '#fff',
-        zIndex: 1,
-        cursor: 'pointer',
-    }
+    // const leftArrowStyles: CSSProperties = {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     transform: 'translate(0, -50%)',
+    //     padding: '0 15px',
+    //     paddingBottom: '5px',
+    //     borderRadius: '25px',
+    //     left: '32px',
+    //     fontSize: 'calc(10px + 3vw)',
+    //     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    //     color: '#fff',
+    //     zIndex: 1,
+    //     cursor: 'pointer',
+    // }
+    //
+    // const rightArrowStyles: CSSProperties = {
+    //     position: 'absolute',
+    //     top: '50%',
+    //     transform: 'translate(0, -50%)',
+    //     padding: '0 15px',
+    //     paddingBottom: '5px',
+    //     borderRadius: '25px',
+    //     right: '32px',
+    //     fontSize: 'calc(10px + 3vw)',
+    //     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+    //     color: '#fff',
+    //     zIndex: 1,
+    //     cursor: 'pointer',
+    // }
 
     const goToPrevious = () => {
         const isFirstSlide = currentIndex === 0;
