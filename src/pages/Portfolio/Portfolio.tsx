@@ -9,6 +9,18 @@ export default function Portfolio() {
             </Helmet>
             <div className="content portfolio--content">Some Examples of our Work</div>
 
+            <div className="portfolio--header portfolio--header-left">Bee Placeholder</div>
+            <Slideshow slides={[
+                { url: "assets/bee_assets/bees.jpg"},
+                { url: "assets/bee_assets/bees_2.jpg"},
+                { url: "assets/bee_assets/bees_honey.jpg"},
+            ]} />
+
+            <div className="portfolio--header portfolio--header-right">Red Barn</div>
+            <Slideshow slides={[
+                { url: "assets/red-barn.jpg"}
+            ]} />
+
             <div className="portfolio--header portfolio--header-left">Efird Leather</div>
             <Slideshow slides={[
                 { url: "assets/efird-leather.JPG"}
@@ -24,19 +36,9 @@ export default function Portfolio() {
                 { url: "assets/2-Crafty-Sisters.jpg"}
             ]} />
 
-            <div className="portfolio--header portfolio--header-right">Red Barn</div>
-            <Slideshow slides={[
-                { url: "assets/red-barn.jpg"}
-            ]} />
 
-            <div className="portfolio--header portfolio--header-left">Bee Placeholder</div>
-            <Slideshow slides={[
-                { url: "assets/bee_assets/bees.jpg"},
-                { url: "assets/bee_assets/bees_2.jpg"},
-                { url: "assets/bee_assets/bees_honey.jpg"},
-                { url: "assets/bee_assets/bee_gabe.jpg"},
-                { url: "assets/bee_assets/bee_jake.jpg"},
-            ]} />
+
+
 
 
         </>

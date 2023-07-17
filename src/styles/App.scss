@@ -372,15 +372,17 @@ body {
         display: flex;
         justify-content: space-around;
         margin: 0 auto 10rem;
+
     }
 
     &--profile {
         border-radius: 25px;
-        width: calc(5rem + 21vw);
-        height: calc(5rem + 30vw);
+        width: 40%;
+        padding: 10px;
+        background-color: #220001;
 
-        // width: 450px;
-        // height: 575px;
+        //width: calc(5rem + 21vw);
+        //height: calc(5rem + 30vw);
     }
 }
 
@@ -615,7 +617,7 @@ body {
 
             & img {
                 width: 90%;
-                height: 125vw;
+                //height: 125vw;
                 margin-bottom: 15vw;
             }
         }
