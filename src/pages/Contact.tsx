@@ -27,7 +27,7 @@ export default function Contact() {
                 <div className="contact--content-text">Jake Britton - (940) 230-6120 (SMS Preferred)</div>
             </div>
 
-            <form className="contact--form" action="https://submit-form.com/XyCS6cZd" method="post">
+            <form className="contact--form" action="https://submit-form.com/XyCS6cZd" method="post" data-netlify="true">
                 
                 <div className="label nameLabel">Name *</div>
                 <div className="nameboxes">
