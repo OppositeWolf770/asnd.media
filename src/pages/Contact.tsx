@@ -1,6 +1,17 @@
 import { Helmet } from "react-helmet"
+import {useState} from "react";
 
 export default function Contact() {
+    const [responseText, setResponseText] = useState("Hello!")
+
+    async function handleClick() {
+        const response = await fetch('/.netlify/functions/pokedex')
+            .then(response => response.json())
+
+        setResponseText(JSON.stringify(response));
+    }
+
+
     return(
         <>
         <Helmet>
@@ -39,6 +50,10 @@ export default function Contact() {
             
             </form>
         </div>
+
+        <button onClick={handleClick}>Click Me!</button>
+
+        <div style={{color: "white"}}>{responseText}</div>
         </>
     )
 }
