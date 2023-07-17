@@ -1,4 +1,4 @@
-import ImageSlider from "../ImageSlider"
+import ImageSlider from "./ImageSlider"
 import "../Slideshow.css"
 
 type Slide = {
