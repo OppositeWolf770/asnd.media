@@ -14,9 +14,8 @@ body {
   justify-content: space-between;
 }
 .topnav .ASNDlogo {
-  margin: 0 auto;
   width: 350px;
-  margin-left: calc(1rem + 2.5vw);
+  margin: 0 auto 0 calc(1rem + 2.5vw);
 }
 .topnav--links {
   display: flex;
@@ -87,9 +86,7 @@ body {
 }
 
 .header {
-  margin: 0 auto;
-  margin-top: 2%;
-  margin-bottom: 10%;
+  margin: 2% auto 10%;
   font-size: calc(1rem + 3vw);
   padding: 0.9rem;
   text-align: center;
@@ -237,9 +234,9 @@ body {
 
 .slideshow--slide {
   width: 80%;
-  height: 50vw;
-  margin: 0 auto;
+  height: 45vw;
   transition: 1s;
+  margin: 0 auto 5vw;
 }
 
 .arrow {
@@ -387,10 +384,6 @@ body {
 .Project-Name {
   color: white;
   margin-top: 1rem;
-}
-
-.slideshow {
-  margin-bottom: 5vw;
 }
 
 @keyframes wave {

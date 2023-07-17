@@ -19,9 +19,8 @@ body {
     justify-content: space-between;
 
     .ASNDlogo {
-        margin: 0 auto;
         width: 350px;
-        margin-left: calc(1rem + 2.5vw);
+        margin: 0 auto 0 calc(1rem + 2.5vw);
     }
 
     &--links {
@@ -124,9 +123,7 @@ body {
 }
 
 .header {
-    margin: 0 auto;
-    margin-top:2%;
-    margin-bottom: 10%;
+    margin: 2% auto 10%;
     font-size: calc(1rem + 3vw);
     padding: .9rem;
     text-align: center;
@@ -308,9 +305,9 @@ body {
 .slideshow {
     &--slide {
         width: 80%;
-        height: 50vw;
-        margin: 0 auto;
+        height: 45vw;
         transition: 1s;
+        margin: 0 auto 5vw;
     }
 }
 
@@ -499,9 +496,9 @@ body {
     }
 }
 
-.slideshow {
-    margin-bottom: 5vw;
-}
+//.slideshow {
+//    margin-bottom: 5vw;
+//}
 
 @keyframes wave {
     0% {

@@ -29,6 +29,15 @@ export default function Portfolio() {
                 { url: "assets/red-barn.jpg"}
             ]} />
 
+            <div className="portfolio--header portfolio--header-left">Bee Placeholder</div>
+            <Slideshow slides={[
+                { url: "assets/bee_assets/bees.jpg"},
+                { url: "assets/bee_assets/bees_2.jpg"},
+                { url: "assets/bee_assets/bees_honey.jpg"},
+                { url: "assets/bee_assets/bee_gabe.jpg"},
+                { url: "assets/bee_assets/bee_jake.jpg"},
+            ]} />
+
 
         </>
     )
