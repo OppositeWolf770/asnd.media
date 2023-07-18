@@ -124,16 +124,15 @@ body {
     }
 
     &--Profiles {
-        margin: 0 auto;
         display: flex;
         justify-content: space-around;
-        margin-bottom: 10rem;
+        margin: 10rem auto;
     }
 
     &--profile {
         border-radius: 25px;
-        width: calc(5rem + 21vw);
-        height: calc(5rem + 30vw);
+        width: calc(5rem + 30vw);
+        //height: calc(5rem + 30vw);
 
         // width: 450px;
         // height: 575px;
@@ -296,11 +295,12 @@ body {
     &--header {
         background-color: #220001;
         color: white;
-        width: 40%;
-        font-size: calc(1rem + 3vw);
+        width: 30%;
+        padding: .3rem;
+        font-size: calc(1rem + 2vw);
         text-align: center;
         margin-bottom: 1%;
-        border-radius: 25px;
+        border-radius: 15px;
 
         &-left {
             margin-left: 10%;
@@ -546,6 +546,12 @@ body {
             width: 80%;
             margin: 0 auto 5rem;
         }
+
+        &--header {
+            width: 50%;
+            padding: 10px;
+            font-size: calc(1rem + 2vw);
+        }
     }
   
     .boost {
@@ -576,12 +582,12 @@ body {
         }
 
         &--Profiles {
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row;
+            align-items: left;
 
             & img {
-                width: 90%;
-                //height: 125vw;
+                width: 60%;
+                height: 10px;
                 margin-bottom: 15vw;
             }
         }

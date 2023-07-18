@@ -1,4 +1,4 @@
-export const handler = async () => {
+export const handler = async (number, string) => {
     const POKE_API = 'https://pokeapi.co/api/v2/pokedex/kanto'
 
     const response = await fetch(POKE_API)
