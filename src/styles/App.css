@@ -211,7 +211,7 @@ body {
   border-radius: 5px;
 }
 .contact--form .emailBox::placeholder {
-  font-family: "Poppins";
+  font-family: "Poppins", serif;
 }
 .contact--form button {
   background-color: white;
@@ -234,20 +234,35 @@ body {
   text-align: center;
   margin-left: 40%;
 }
+.portfolio--header {
+  background-color: #220001;
+  color: white;
+  width: 40%;
+  font-size: calc(1rem + 3vw);
+  text-align: center;
+  margin-bottom: 1%;
+  border-radius: 25px;
+}
+.portfolio--header-left {
+  margin-left: 10%;
+}
+.portfolio--header-right {
+  margin-right: 10%;
+  margin-left: auto;
+}
 
 .slideshow--slide {
   width: 80%;
-  height: 50vw;
-  margin: 0 auto;
+  height: 45vw;
   transition: 1s;
+  margin: 0 auto 5vw;
 }
 
 .arrow {
   position: absolute;
   top: 50%;
   transform: translate(0, -50%);
-  padding: 0 15px;
-  padding-bottom: 5px;
+  padding: 0 15px 5px;
   border-radius: 25px;
   font-size: calc(10px + 3vw);
   background-color: rgba(0, 0, 0, 0.5);
@@ -333,9 +348,9 @@ body {
   font-family: "Oswald", serif;
   font-size: calc(1rem + 0.3vw);
   display: flex;
-  overflow: hidden;
+  flex-wrap: wrap;
   justify-content: space-around;
-  gap: 100px;
+  gap: 5%;
   margin-bottom: 15vw;
 }
 
@@ -352,10 +367,6 @@ body {
 .Project-Name {
   color: white;
   margin-top: 1rem;
-}
-
-.slideshow {
-  margin-bottom: 5vw;
 }
 
 @keyframes wave {
@@ -393,8 +404,7 @@ body {
 @media (max-width: 820px) {
   .home--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
     padding: 30px;
   }
   .home--contentHeader {
@@ -410,34 +420,29 @@ body {
     flex-direction: column;
   }
   .Projects .Project {
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .portfolio--content {
     width: 80%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .boost-wrapper {
     flex-direction: column;
   }
   .boost--header {
     width: 70%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .boost--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .about--header {
     width: 50%;
   }
   .about--content {
     width: 90%;
-    margin: 0 auto;
-    margin-bottom: 5rem;
+    margin: 0 auto 5rem;
   }
   .about--Profiles {
     flex-direction: column;
@@ -445,12 +450,10 @@ body {
   }
   .about--Profiles img {
     width: 90%;
-    height: 125vw;
     margin-bottom: 15vw;
   }
   .contact--wrapper {
     flex-direction: column;
-    margin-left: 0;
     width: 90%;
     margin: 0 auto;
   }
