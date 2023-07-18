@@ -13,64 +13,30 @@ body {
 // Topnav Style Rules
 .topnav {
     display: flex;
-    //align-items: flex-start;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    flex-wrap: wrap;
-    // padding: 150px;
-    justify-content: space-between;
+    margin: 5% 0;
 
     .ASNDlogo {
-        //position: relative;
-        margin: 0 auto;
-        // float: left;
         width: 350px;
-         //width: calc(1rem + 17vw);
-         //margin-left: 50px;
         margin-left: calc(1rem + 2.5vw);
-        //margin-left: auto;
-        //margin-right: auto;
     }
 
     &--links {
         display: flex;
-        position: relative;
         font-family: 'Source Serif Pro', serif;
         letter-spacing: 1.5px;
-        // justify-content: center;
         align-items: center;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto;
 
         a {
-            position: relative;
             margin: 30px;
             color: white;
             text-decoration: none;
 
             &:hover {
-                // color: #ffa4a7;
                 text-decoration: underline;
                 text-underline-offset: 5px;
                 font-weight: bold;
             }
-
-            // &:after {
-            //     content: "";
-            //     position: absolute;
-            //     width: 100%;
-            //     transform: scaleX(0);
-            //     height: 2px;
-            //     bottom: 0;
-            //     left: 0;
-            //     transform-origin: bottom right;
-            //     transition: transform 0.25s ease-out;
-            // }
-
-            // &:hover:after {
-            //     transform: scaleX(1);
-            //     transform-origin: bottom left;
-            // }
         }
     }
 }
@@ -90,17 +56,10 @@ body {
 // Home Page Style Rules
 .home {
     &--content {
-        margin-top: 200px;
-        margin-left: 30%;
-        margin-right: 6%;
-
-        padding-left: 50px;
-        padding-top: 30px;
-        padding-bottom: 50px;
-        
+        margin: 200px 6% 0 30%;
+        padding: 30px 0 50px 50px;
 
         &Header {
-            // font-weight: bold;
             font-size: calc(1rem + 3.6vw);
             margin-bottom: 30px;
         }
@@ -118,7 +77,7 @@ body {
             padding: 1.2rem;
             font-family: 'Poppins', sans-serif;
             border-radius: 10px;
-            font-size: 16px;
+            font-size: calc(0.5rem + 1vw);
             font-weight: bold;
             transition: background-color 0.5s ease;
 
@@ -134,14 +93,51 @@ body {
     }
 }
 
-.header {
-    margin: 0 auto;
-    margin-top:2%;
-    margin-bottom: 10%;
-    font-size: calc(1rem + 3vw);
-    padding: .9rem;
-    text-align: center;
-    width: 20%;
+// About Style Rules
+.about {
+    &--header {
+        margin: 2% auto 10%;
+        font-size: calc(1rem + 3vw);
+        padding: .9rem;
+        text-align: center;
+        width: 20%;
+    }
+
+    &--content {
+        text-align: center;
+        width: 65%;
+        padding-bottom: 50px;
+        margin: 0 auto 50px;
+
+        &-subheader {
+            padding-top: 50px;
+            margin-bottom: 70px;
+            font-size: calc(1rem + 2vw);
+            font-weight: bold;
+        }
+
+        &-text {
+            font-size: calc(1rem + 0.75vw);
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    &--Profiles {
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 10rem;
+    }
+
+    &--profile {
+        border-radius: 25px;
+        width: calc(5rem + 21vw);
+        height: calc(5rem + 30vw);
+
+        // width: 450px;
+        // height: 575px;
+    }
 }
 
 .boost {
@@ -152,9 +148,11 @@ body {
     }
 
     &--header {
-        font-size: calc(1rem + 2.5vw);
-        //padding-left: 5rem;
-        //padding-right: 5rem;
+        text-align: center;
+        margin: 2% auto 10% auto;
+        padding: 1rem;
+        font-size: calc(1rem + 3vw);
+        width: 30%;
     }
 
     &--content {
@@ -163,7 +161,6 @@ body {
         &-subheader {
             text-align: center;
             font-size: calc(1rem + 1vw);
-            font-weight: 300;
             padding-top: 1rem;
 
             a {
@@ -173,9 +170,7 @@ body {
 
         ul {
             font-size: calc(1rem + 0.25vw);
-            font-weight: 300;
-            margin-left: 1rem;
-            margin-right: 1rem;
+            margin: 0  1rem;
 
             li {
                 margin-bottom: 0.5rem;
@@ -337,56 +332,7 @@ body {
     right: 2.25vw;
 }
 
-// About Style Rules
-.about {
-    &--header {
-        margin: 0 auto;
-        margin-top:2%;
-        margin-bottom: 10%;
-        font-size: calc(1rem + 3vw);
-        padding: .9rem;
-        text-align: center;
-        width: 20%;
-    }
 
-    &--content {
-        margin: 0 auto;
-        text-align: center;
-        width: 65%;
-        padding-bottom: 50px;
-        margin-bottom: 50px;
-
-        &-subheader { 
-            padding-top: 50px;
-            margin-bottom: 70px;
-            font-size: calc(1rem + 2vw);
-            font-weight: bold;
-        }
-
-        &-text {
-            font-size: calc(1rem + 0.75vw);
-            font-weight: 200;
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-    }
-
-    &--Profiles {
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-around;
-        margin-bottom: 10rem;
-    }
-
-    &--profile {
-        border-radius: 25px;
-        width: calc(5rem + 21vw);
-        height: calc(5rem + 30vw);
-
-        // width: 450px;
-        // height: 575px;
-    }
-}
 
 .subtext {
     font-size: calc(1rem + 0.05vw);
@@ -473,7 +419,7 @@ body {
 
 // Projects Carousel Style Rules
 .Projects {
-    font-family: 'Oswald';
+    font-family: 'Oswald', serif;
     font-size: calc(1rem + 0.3vw);
     display: flex;
     overflow: hidden;
@@ -525,12 +471,14 @@ body {
 
 @media (max-width: 988px) {
     .topnav {
+        flex-direction: column;
+        align-items: center;
+
         &--links {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            grid-row: auto;
-            margin-top: 5px;
+            //grid-row: auto;
             justify-items: center;
 
             //a {
@@ -545,14 +493,7 @@ body {
         }
 
         .ASNDlogo {
-            display: block;
-            width: 75%;
-             //margin: 0 auto;
-            //margin: 0 auto;
-            //margin-left: 20%;
-            //justify-content: center;
-            margin-left: auto;
-            //margin-right: auto;
+            margin-left: 0;
         }
     }
 }
