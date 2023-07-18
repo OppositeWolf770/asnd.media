@@ -1,5 +1,5 @@
-import Navbar from "./pages/Navbar"
-import Footer from "./pages/Footer"
+import Navbar from "./pages/Base Components/Navbar"
+import Footer from "./pages/Base Components/Footer"
 import Home from "./pages/Home/Home"
 
 interface LayoutProps {

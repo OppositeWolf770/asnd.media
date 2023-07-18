@@ -6,9 +6,9 @@ import AdminLogin from './pages/AdminLogin'
 import Layout from './Layout'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
-import Packages from './pages/Packages'
-import Contact from './pages/Contact'
-import Portfolio from './pages/Portfolio'
+import Packages from './pages/Boost Packages/Packages'
+import Contact from './pages/Contact/Contact'
+import Portfolio from './pages/Portfolio/Portfolio'
 import Carousel from './pages/Home/Carousel'
 
 

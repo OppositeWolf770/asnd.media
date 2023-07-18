@@ -16,8 +16,8 @@ export default function About() {
         </div>
 
         <div className="about--Profiles">
-            <img className="about--profile" src="\assets\jake-portrait.jpg" alt=""></img>
-            <img className="about--profile" src="\assets\gabe-portrait.jpg" alt=""></img>
+            <img className="about--profile" src="\assets\bee_assets\bee_jake.jpg" alt=""></img>
+            <img className="about--profile" src="\assets\bee_assets\bee_gabe.jpg" alt=""></img>
         </div>
         </>
     )
