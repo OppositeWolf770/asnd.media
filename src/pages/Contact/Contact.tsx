@@ -16,14 +16,19 @@ export default function Contact() {
     async function handleSubmit(event: React.SyntheticEvent<HTMLFormElement>) {
         event.preventDefault();
 
-        setButtonMsg("Email Sent!")
 
-        const res = await fetch('.netlify/functions/submit', {
-            method: 'POST',
-            body: JSON.stringify({firstName, lastName, email, message}),
-        }).then((res) => res.json())
+        try {
+            const res = await fetch('.netlify/functions/submit', {
+                method: 'POST',
+                body: JSON.stringify({firstName, lastName, email, message}),
+            }).then((res) => res.json())
+            setResponse(res);
+            setButtonMsg("Email Sent!")
 
-        setResponse(res);
+        } catch(e) {
+            setButtonMsg("Could not send email. Please contact them directly.")
+        }
+
         setFirstName('')
         setLastName('')
         setEmail('')
@@ -44,8 +49,8 @@ export default function Contact() {
             <div className="contact--content">
                 <div className="contact--content-heading">Contact us.</div>
                 <div className="contact--content-text">asndmediacontact@gmail.com</div>
-                <div className="contact--content-text">Gabe Spencer - (501) 764-6114 (SMS Preferred)</div>
-                <div className="contact--content-text">Jake Britton - (940) 230-6120 (SMS Preferred)</div>
+                {/*<div className="contact--content-text">Gabe Spencer - (501) 764-6114 (SMS Preferred)</div>*/}
+                {/*<div className="contact--content-text">Jake Britton - (940) 230-6120 (SMS Preferred)</div>*/}
             </div>
 
             {/*<form className="contact--form" action="https://submit-form.com/XyCS6cZd" method="post">*/}
@@ -94,7 +99,7 @@ export default function Contact() {
                           value={message}
                           required></textarea>
                 
-                <button type="submit">{buttonMsg}</button>
+                <button className="contact-button" type="submit">{buttonMsg}</button>
             
             </form>
         </div>

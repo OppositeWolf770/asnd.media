@@ -8,6 +8,7 @@ export default function Projects() {
             <ProjectItem img="assets\red-barn.png" name="Red Barn Market" />
             <ProjectItem img="assets\Spirited-Recreations.png" name="Spirited Recreations" />
             <ProjectItem img="assets\2-Crafty-Sisters.png" name="2 Crafty Sisters" />
+            <ProjectItem img="assets\bee_assets\bees.jpg" name="Bee Placeholder" />
         </div>
         </>
     )
