@@ -4,7 +4,7 @@ export default function Navbar() {
     return (
         <>
         <nav className="topnav">
-            <NavLink to={"/"}><img className="ASNDlogo" src="/assets/ASND-logo.png" alt="ASND Media Logo" /></NavLink>
+            <NavLink to={"/"}><img className="ASNDlogo" src="/images/ASND-logo.png" alt="ASND Media Logo" /></NavLink>
             <div className="topnav--links">
                 <NavLink to={"/about"}>About Us</NavLink>
                 <NavLink to={"/packages"}>Boost Packages</NavLink>

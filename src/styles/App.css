@@ -224,6 +224,7 @@ body {
 }
 .contact--form button {
   background-color: white;
+  color: black;
   border: none;
   border-radius: 10px;
   padding: 2% 4%;
@@ -460,12 +461,11 @@ body {
     margin: 0 auto 5rem;
   }
   .about--Profiles {
-    flex-direction: row;
-    align-items: left;
+    flex-direction: column;
+    align-items: center;
   }
   .about--Profiles img {
-    width: 60%;
-    height: 10px;
+    width: 90%;
     margin-bottom: 15vw;
   }
   .contact--wrapper {
